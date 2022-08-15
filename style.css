@@ -1,2 +1,120 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ div{
+    margin-left: 10px;
+ }
+ .container0{
+    display: flex;
+    position: relative;
+    transform: translate(-50%, -50%);
+   
+
+ }
+ .btn{
+    
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+ }
+ .btn::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#6d6c6c, #000000);
+    animation: efeito 2s ease infinite;
+    transition: 1s ease;
+ }
+ 
+ .btn2 {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ .btn2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#121212, #595959);
+    animation: efeito 2s ease infinite;
+    transition: 1s ease;
+ }
+ @keyframes efeito{
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+ .container:hover .btn::before{
+    background: #595959;
+ }
+ a{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 147px;
+    height: 52px;
+    background: #121212;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffff;
+    letter-spacing: 1px;
+ }
+
+
+
+body{
+    background-color: rgba(231, 231, 231, 0.863);
+ }
+header > img{
+    width: 415px;
+    height: 159px;
+}
+
+article > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    width: 400px;
+    
+}
+ .container {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+  
+  
+ }
+ p{
+    padding: 25px;
+ }
+  
+article#filho{
+    margin-left: 337px ;
+}
+
+
 
